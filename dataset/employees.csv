@@ -1,0 +1,151 @@
+employee_id,full_name,department,role,seniority_level,is_privileged_user,hire_date,manager_id,office_location
+EMP001,Manager Engineering 51,Engineering,Engineering Director,Senior,True,2025-04-07,EMP001,Tokyo
+EMP002,Manager HR 81,HR,HR Director,Senior,False,2023-05-16,EMP001,New York
+EMP003,Manager Finance 27,Finance,Finance Director,Senior,True,2022-07-04,EMP001,Bengaluru
+EMP004,Manager Sales 12,Sales,Sales Director,Senior,False,2025-02-05,EMP001,New York
+EMP005,Manager Executive 51,Executive,VP of Engineering,Executive,True,2024-01-27,,San Francisco
+EMP006,Employee 6 504,Engineering,Software Engineer,Junior,True,2024-11-28,EMP001,San Francisco
+EMP007,Employee 7 394,Finance,Accountant,Junior,False,2024-12-24,EMP003,New York
+EMP008,Employee 8 336,HR,Recruiter,Junior,False,2024-02-29,EMP002,London
+EMP009,Employee 9 628,Finance,Accountant,Mid,False,2025-02-15,EMP003,London
+EMP010,Employee 10 544,Engineering,QA Engineer,Mid,True,2025-12-22,EMP001,New York
+EMP011,Employee 11 710,Finance,Accountant,Mid,False,2025-09-23,EMP003,Bengaluru
+EMP012,Employee 12 582,HR,Recruiter,Junior,False,2026-02-14,EMP002,London
+EMP013,Employee 13 996,Sales,Sales Representative,Junior,False,2024-06-04,EMP004,New York
+EMP014,Employee 14 189,Finance,Accountant,Mid,False,2024-09-17,EMP003,London
+EMP015,Employee 15 640,Sales,Sales Representative,Mid,False,2025-08-01,EMP004,Bengaluru
+EMP016,Employee 16 857,Engineering,Engineering Manager,Senior,True,2025-01-04,EMP001,Bengaluru
+EMP017,Employee 17 238,Engineering,Engineering Manager,Senior,True,2025-02-15,EMP001,London
+EMP018,Employee 18 388,Engineering,QA Engineer,Mid,True,2024-02-06,EMP016,New York
+EMP019,Employee 19 730,HR,HR Manager,Senior,True,2025-07-06,EMP002,New York
+EMP020,Employee 20 825,Engineering,Software Engineer,Junior,True,2024-12-21,EMP001,San Francisco
+EMP021,Employee 21 429,Sales,Account Executive,Junior,False,2025-03-02,EMP004,San Francisco
+EMP022,Employee 22 162,HR,HR Manager,Senior,True,2025-05-26,EMP002,Tokyo
+EMP023,Employee 23 649,Sales,Sales Representative,Junior,False,2024-03-13,EMP004,London
+EMP024,Employee 24 114,Engineering,Engineering Manager,Senior,True,2025-08-31,EMP016,London
+EMP025,Employee 25 882,Sales,Sales Manager,Senior,True,2025-12-01,EMP004,Bengaluru
+EMP026,Employee 26 748,Engineering,Software Engineer,Mid,True,2026-01-28,EMP017,San Francisco
+EMP027,Employee 27 277,Finance,Finance Manager,Senior,True,2024-09-27,EMP003,San Francisco
+EMP028,Employee 28 371,HR,HR Manager,Senior,True,2024-09-06,EMP019,Bengaluru
+EMP029,Employee 29 165,Sales,Sales Representative,Mid,False,2024-06-06,EMP004,New York
+EMP030,Employee 30 764,HR,Recruiter,Junior,False,2025-09-30,EMP022,Bengaluru
+EMP031,Employee 31 636,Sales,Sales Manager,Senior,True,2024-11-13,EMP025,Tokyo
+EMP032,Employee 32 871,Engineering,DevOps Engineer,Junior,True,2025-10-29,EMP001,New York
+EMP033,Employee 33 796,Engineering,Software Engineer,Junior,True,2024-02-05,EMP016,Tokyo
+EMP034,Employee 34 753,Engineering,QA Engineer,Mid,True,2024-12-09,EMP001,Tokyo
+EMP035,Employee 35 451,HR,HR Manager,Senior,True,2025-08-24,EMP028,New York
+EMP036,Employee 36 866,Finance,Finance Manager,Senior,True,2026-01-16,EMP003,Bengaluru
+EMP037,Employee 37 683,Engineering,Senior Software Engineer,Senior,True,2024-07-21,EMP001,New York
+EMP038,Employee 38 417,Engineering,DevOps Engineer,Junior,True,2025-02-28,EMP001,San Francisco
+EMP039,Employee 39 631,Engineering,Software Engineer,Junior,True,2025-07-10,EMP017,San Francisco
+EMP040,Employee 40 470,HR,HR Specialist,Mid,False,2026-02-02,EMP019,Tokyo
+EMP041,Employee 41 740,Sales,Sales Manager,Senior,True,2025-08-21,EMP004,Bengaluru
+EMP042,Employee 42 370,Engineering,QA Engineer,Mid,True,2025-05-05,EMP017,Tokyo
+EMP043,Employee 43 637,Sales,Sales Representative,Mid,False,2026-02-11,EMP031,New York
+EMP044,Employee 44 226,Finance,Accountant,Junior,False,2025-06-08,EMP003,San Francisco
+EMP045,Employee 45 203,Finance,Finance Manager,Senior,True,2024-02-05,EMP003,Tokyo
+EMP046,Employee 46 526,Engineering,QA Engineer,Mid,True,2026-03-06,EMP024,San Francisco
+EMP047,Employee 47 996,Finance,Accountant,Mid,False,2025-05-11,EMP003,New York
+EMP048,Employee 48 810,HR,HR Specialist,Mid,False,2024-05-22,EMP028,Bengaluru
+EMP049,Employee 49 831,HR,HR Specialist,Junior,False,2024-02-13,EMP028,Bengaluru
+EMP050,Employee 50 640,Finance,Accountant,Mid,False,2025-10-31,EMP036,New York
+EMP051,Employee 51 668,Engineering,DevOps Engineer,Junior,True,2024-04-08,EMP016,Bengaluru
+EMP052,Employee 52 858,HR,Recruiter,Junior,False,2024-05-08,EMP019,London
+EMP053,Employee 53 990,HR,HR Specialist,Mid,False,2025-05-20,EMP035,San Francisco
+EMP054,Employee 54 919,Sales,Sales Manager,Senior,True,2025-06-13,EMP041,Tokyo
+EMP055,Employee 55 990,HR,HR Manager,Senior,True,2025-12-10,EMP022,London
+EMP056,Employee 56 644,Engineering,Software Engineer,Junior,True,2025-07-21,EMP017,Bengaluru
+EMP057,Employee 57 372,Finance,Accountant,Junior,False,2025-11-27,EMP045,Tokyo
+EMP058,Employee 58 915,Finance,Finance Manager,Senior,True,2024-04-23,EMP003,New York
+EMP059,Employee 59 807,Sales,Account Executive,Junior,False,2025-10-06,EMP025,Tokyo
+EMP060,Employee 60 889,HR,HR Specialist,Mid,False,2024-11-05,EMP019,Tokyo
+EMP061,Employee 61 234,Engineering,Engineering Manager,Senior,True,2025-12-01,EMP016,Tokyo
+EMP062,Employee 62 493,Finance,Financial Analyst,Junior,False,2024-05-27,EMP027,London
+EMP063,Employee 63 932,Sales,Sales Representative,Mid,False,2024-05-11,EMP054,Tokyo
+EMP064,Employee 64 271,Engineering,Engineering Manager,Senior,True,2025-12-08,EMP061,Bengaluru
+EMP065,Employee 65 209,Engineering,QA Engineer,Mid,True,2024-05-09,EMP001,San Francisco
+EMP066,Employee 66 192,HR,HR Manager,Senior,True,2025-05-09,EMP028,London
+EMP067,Employee 67 593,Engineering,Engineering Manager,Senior,True,2024-04-08,EMP064,Bengaluru
+EMP068,Employee 68 976,Engineering,DevOps Engineer,Junior,True,2024-05-31,EMP067,Bengaluru
+EMP069,Employee 69 979,HR,HR Manager,Senior,True,2026-02-08,EMP028,New York
+EMP070,Employee 70 941,Engineering,Software Engineer,Mid,True,2024-12-22,EMP016,London
+EMP071,Employee 71 752,Engineering,Software Engineer,Junior,True,2026-01-16,EMP024,Bengaluru
+EMP072,Employee 72 125,Engineering,Engineering Manager,Senior,True,2024-06-08,EMP067,Bengaluru
+EMP073,Employee 73 991,Engineering,Senior Software Engineer,Senior,True,2025-12-31,EMP001,London
+EMP074,Employee 74 757,Engineering,Senior Software Engineer,Senior,True,2025-10-17,EMP064,New York
+EMP075,Employee 75 125,Finance,Financial Analyst,Mid,False,2024-09-21,EMP003,Bengaluru
+EMP076,Employee 76 677,Engineering,Software Engineer,Junior,True,2024-04-03,EMP024,San Francisco
+EMP077,Employee 77 976,Finance,Accountant,Junior,False,2024-11-20,EMP045,New York
+EMP078,Employee 78 165,Engineering,DevOps Engineer,Junior,True,2025-09-19,EMP064,London
+EMP079,Employee 79 553,Engineering,DevOps Engineer,Mid,True,2024-09-05,EMP072,San Francisco
+EMP080,Employee 80 599,Finance,Accountant,Mid,False,2024-07-10,EMP045,San Francisco
+EMP081,Employee 81 493,Finance,Finance Manager,Senior,True,2025-10-02,EMP058,New York
+EMP082,Employee 82 387,Engineering,Engineering Manager,Senior,True,2025-09-17,EMP067,San Francisco
+EMP083,Employee 83 710,HR,Recruiter,Junior,False,2024-12-19,EMP002,Tokyo
+EMP084,Employee 84 291,Finance,Finance Manager,Senior,True,2024-10-15,EMP027,San Francisco
+EMP085,Employee 85 722,Sales,Sales Representative,Junior,False,2025-01-09,EMP054,London
+EMP086,Employee 86 323,Finance,Accountant,Mid,False,2025-01-14,EMP003,San Francisco
+EMP087,Employee 87 831,Engineering,Engineering Manager,Senior,True,2025-06-07,EMP016,New York
+EMP088,Employee 88 729,Engineering,Senior Software Engineer,Senior,True,2025-07-02,EMP064,Tokyo
+EMP089,Employee 89 266,Engineering,QA Engineer,Junior,True,2025-03-02,EMP024,London
+EMP090,Employee 90 420,Engineering,Engineering Manager,Senior,True,2025-10-24,EMP001,Bengaluru
+EMP091,Employee 91 771,Finance,Financial Analyst,Mid,False,2025-12-17,EMP058,London
+EMP092,Employee 92 287,Finance,Finance Manager,Senior,True,2025-12-05,EMP058,Bengaluru
+EMP093,Employee 93 626,HR,HR Specialist,Junior,False,2025-04-09,EMP002,San Francisco
+EMP094,Employee 94 382,Sales,Sales Manager,Senior,True,2024-04-28,EMP025,Bengaluru
+EMP095,Employee 95 985,Engineering,QA Engineer,Junior,True,2025-10-21,EMP064,San Francisco
+EMP096,Employee 96 195,HR,HR Specialist,Junior,False,2024-12-03,EMP066,London
+EMP097,Employee 97 728,Engineering,Senior Software Engineer,Senior,True,2025-12-01,EMP072,Bengaluru
+EMP098,Employee 98 574,Engineering,DevOps Engineer,Junior,True,2025-08-26,EMP016,London
+EMP099,Employee 99 698,Engineering,Software Engineer,Junior,True,2026-02-03,EMP072,New York
+EMP100,Employee 100 752,Engineering,Senior Software Engineer,Senior,True,2026-01-13,EMP067,New York
+EMP101,Employee 101 432,Engineering,Software Engineer,Junior,True,2024-11-05,EMP067,New York
+EMP102,Employee 102 312,Engineering,DevOps Engineer,Mid,True,2025-05-03,EMP072,Bengaluru
+EMP103,Employee 103 841,Sales,Account Executive,Mid,False,2025-09-01,EMP025,New York
+EMP104,Employee 104 195,HR,HR Specialist,Mid,False,2025-02-12,EMP055,San Francisco
+EMP105,Employee 105 470,HR,Recruiter,Mid,False,2025-06-30,EMP019,London
+EMP106,Employee 106 338,HR,HR Manager,Senior,True,2025-08-22,EMP002,New York
+EMP107,Employee 107 929,Engineering,Engineering Manager,Senior,True,2024-02-03,EMP072,New York
+EMP108,Employee 108 204,HR,Recruiter,Junior,False,2024-02-29,EMP055,New York
+EMP109,Employee 109 670,Finance,Finance Manager,Senior,True,2025-09-16,EMP058,London
+EMP110,Employee 110 833,Finance,Accountant,Mid,False,2025-12-13,EMP003,Tokyo
+EMP111,Employee 111 336,Engineering,QA Engineer,Junior,True,2026-03-02,EMP064,New York
+EMP112,Employee 112 637,Sales,Sales Representative,Mid,False,2024-10-01,EMP054,London
+EMP113,Employee 113 927,Engineering,QA Engineer,Junior,True,2026-02-21,EMP072,San Francisco
+EMP114,Employee 114 451,Engineering,Engineering Manager,Senior,True,2024-11-30,EMP016,London
+EMP115,Employee 115 977,Engineering,Engineering Manager,Senior,True,2026-01-24,EMP064,San Francisco
+EMP116,Employee 116 995,Sales,Account Executive,Junior,False,2025-06-16,EMP041,San Francisco
+EMP117,Employee 117 736,HR,Recruiter,Mid,False,2026-02-12,EMP035,San Francisco
+EMP118,Employee 118 923,Finance,Financial Analyst,Junior,False,2026-01-12,EMP109,Tokyo
+EMP119,Employee 119 478,Sales,Account Executive,Mid,False,2025-01-20,EMP094,San Francisco
+EMP120,Employee 120 584,Sales,Sales Manager,Senior,True,2026-02-28,EMP094,San Francisco
+EMP121,Employee 121 865,Sales,Account Executive,Junior,False,2024-03-27,EMP041,Bengaluru
+EMP122,Employee 122 107,Sales,Account Executive,Junior,False,2025-10-27,EMP025,Bengaluru
+EMP123,Employee 123 398,HR,Recruiter,Mid,False,2024-12-04,EMP019,London
+EMP124,Employee 124 134,Engineering,Engineering Manager,Senior,True,2025-08-24,EMP115,Tokyo
+EMP125,Employee 125 783,Engineering,Software Engineer,Junior,True,2024-11-26,EMP087,Bengaluru
+EMP126,Employee 126 454,HR,HR Specialist,Mid,False,2025-07-28,EMP002,London
+EMP127,Employee 127 179,Engineering,Senior Software Engineer,Senior,True,2024-08-14,EMP067,San Francisco
+EMP128,Employee 128 774,Engineering,QA Engineer,Junior,True,2026-02-04,EMP087,London
+EMP129,Employee 129 219,HR,HR Specialist,Mid,False,2026-03-08,EMP066,New York
+EMP130,Employee 130 319,Finance,Finance Manager,Senior,True,2024-02-05,EMP027,Bengaluru
+EMP131,Employee 131 153,HR,Recruiter,Mid,False,2025-06-15,EMP066,Bengaluru
+EMP132,Employee 132 169,Sales,Account Executive,Junior,False,2026-02-14,EMP025,Bengaluru
+EMP133,Employee 133 254,Finance,Financial Analyst,Mid,False,2025-09-09,EMP036,Bengaluru
+EMP134,Employee 134 936,Engineering,DevOps Engineer,Mid,True,2025-07-23,EMP115,London
+EMP135,Employee 135 915,HR,HR Manager,Senior,True,2024-09-30,EMP019,London
+EMP136,Employee 136 814,Sales,Sales Manager,Senior,True,2025-11-02,EMP120,Tokyo
+EMP137,Employee 137 709,Engineering,Software Engineer,Mid,True,2025-09-21,EMP087,Bengaluru
+EMP138,Employee 138 755,Engineering,Engineering Manager,Senior,True,2025-10-05,EMP061,London
+EMP139,Employee 139 627,Sales,Account Executive,Junior,False,2025-11-09,EMP054,London
+EMP140,Employee 140 435,Engineering,Engineering Manager,Senior,True,2025-12-11,EMP064,New York
+EMP141,Employee 141 245,Engineering,QA Engineer,Junior,True,2025-11-08,EMP090,London
+EMP142,Employee 142 858,Engineering,DevOps Engineer,Mid,True,2025-05-19,EMP124,San Francisco
+EMP143,Employee 143 790,HR,HR Specialist,Junior,False,2024-12-26,EMP022,Bengaluru
+EMP144,Employee 144 471,Engineering,QA Engineer,Junior,True,2024-03-04,EMP001,New York
+EMP145,Employee 145 219,Engineering,Senior Software Engineer,Senior,True,2025-01-03,EMP061,New York
+EMP146,Employee 146 563,Engineering,Senior Software Engineer,Senior,True,2025-01-16,EMP087,London
+EMP147,Employee 147 550,Finance,Finance Manager,Senior,True,2024-08-10,EMP045,London
+EMP148,Employee 148 382,HR,HR Specialist,Mid,False,2024-05-01,EMP135,Tokyo
+EMP149,Employee 149 371,Engineering,Senior Software Engineer,Senior,True,2025-02-04,EMP087,New York
+EMP150,Employee 150 283,Engineering,Senior Software Engineer,Senior,True,2024-05-23,EMP124,Bengaluru

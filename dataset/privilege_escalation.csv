@@ -1,0 +1,2 @@
+event_id,employee_id,timestamp,previous_access_level,new_access_level,approved_by,justification_provided
+4fd36e14-31a2-43fb,EMP078,2026-05-13 11:15:00,User,Administrator,SYSTEM_AUTO,Urgent software update debugging
