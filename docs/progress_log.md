@@ -1,6 +1,6 @@
-# SentinelAI Project Progress Log
+# GarudaAI Project Progress Log
 
-This log documents the completion of the sequential phases of the SentinelAI platform.
+This log documents the completion of the sequential phases of the GarudaAI platform.
 
 | Phase | Description | Date Completed | Status |
 |---|---|---|---|

@@ -1,4 +1,4 @@
-# SentinelAI Database Schema Design
+# GarudaAI Database Schema Design
 
 This document details the MongoDB database schema design, including collections, field definitions, indices, and mapping lists.
 

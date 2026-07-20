@@ -10,7 +10,7 @@ from backend.db_client import get_db
 from backend.trust_score import evaluate_event_deduction, recalculate_score
 from backend.app import app
 
-class TestSentinelAIBackend(unittest.TestCase):
+class TestGarudaAIBackend(unittest.TestCase):
     
     @classmethod
     def setUpClass(cls):

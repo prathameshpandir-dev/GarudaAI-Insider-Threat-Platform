@@ -1,6 +1,6 @@
-# SentinelAI Testing & Scoping Notes
+# GarudaAI Testing & Scoping Notes
 
-This document provides details on SentinelAI testing practices, test execution steps, and known project constraints.
+This document provides details on GarudaAI testing practices, test execution steps, and known project constraints.
 
 ---
 

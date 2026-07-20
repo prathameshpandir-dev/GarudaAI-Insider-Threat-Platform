@@ -1,12 +1,12 @@
-# SentinelAI Final Project Summary
+# GarudaAI Final Project Summary
 
-SentinelAI is an advanced security intelligence platform that calculates behavior trust scores, visualizes interactive attack timelines, and leverages Gemini models for automated incident response.
+GarudaAI is an advanced security intelligence platform that calculates behavior trust scores, visualizes interactive attack timelines, and leverages Gemini models for automated incident response.
 
 ---
 
 ## 🚀 3-Sentence Demo Pitch
 
-SentinelAI empowers security operations centers (SOC) to detect and contain insider threats before data exfiltration occurs by transforming millions of raw, noisy logs into clean, human-readable behavioral trust scores and chronological timelines. When an alert triggers, our integration with Gemini models instantly delivers a comprehensive incident narrative and structured containment playbook, saving critical hours during a breach. With an interactive attack simulator and natural-language security search, SentinelAI elevates security analysts from passive query-builders to proactive threat-hunters.
+GarudaAI empowers security operations centers (SOC) to detect and contain insider threats before data exfiltration occurs by transforming millions of raw, noisy logs into clean, human-readable behavioral trust scores and chronological timelines. When an alert triggers, our integration with Gemini models instantly delivers a comprehensive incident narrative and structured containment playbook, saving critical hours during a breach. With an interactive attack simulator and natural-language security search, GarudaAI elevates security analysts from passive query-builders to proactive threat-hunters.
 
 ---
 
@@ -41,4 +41,4 @@ SentinelAI empowers security operations centers (SOC) to detect and contain insi
 
 1. **Real-time Log Ingestion**: Connect the Flask API server to live corporate logging systems (SIEM/Splunk) or host agents on endpoints rather than importing static CSV logs.
 2. **Deep-Learning Score Adjusters**: Replace simple deduction weights with dynamic anomaly-detection algorithms (e.g. Isolation Forests, Autoencoders) to establish custom employee baseline behaviors.
-3. **SOAR Active Containment**: Wire up the "Mitigation Playbook" suggestions directly to Active Directory / Okta APIs, allowing analysts to lock accounts or revoke session tokens with a single click inside the SentinelAI dashboard.
+3. **SOAR Active Containment**: Wire up the "Mitigation Playbook" suggestions directly to Active Directory / Okta APIs, allowing analysts to lock accounts or revoke session tokens with a single click inside the GarudaAI dashboard.

@@ -14,7 +14,7 @@ except ImportError:
     from db_client import get_db
 
 # Load env variables manually from .env if present
-MONGODB_URI = "mongodb://localhost:27017/sentinelai"
+MONGODB_URI = "mongodb://localhost:27017/garudaai"
 if os.path.exists(".env"):
     with open(".env", "r") as f:
         for line in f:

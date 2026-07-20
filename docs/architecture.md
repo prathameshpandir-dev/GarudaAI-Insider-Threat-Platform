@@ -1,6 +1,6 @@
-# SentinelAI System Architecture Design
+# GarudaAI System Architecture Design
 
-This document details the high-level system architecture, request flows, computation models, and security design for SentinelAI.
+This document details the high-level system architecture, request flows, computation models, and security design for GarudaAI.
 
 ---
 

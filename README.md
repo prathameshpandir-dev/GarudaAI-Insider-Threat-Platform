@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/google/material-design-icons/master/png/action/security/ios/production_png_shared/2x/el_security_action_security_2x_web_24dp.png" width="32" height="32" valign="middle" /> SentinelAI
+# <img src="https://raw.githubusercontent.com/google/material-design-icons/master/png/action/security/ios/production_png_shared/2x/el_security_action_security_2x_web_24dp.png" width="32" height="32" valign="middle" /> GarudaAI
 
 [![Vercel Deployment](https://img.shields.io/badge/deployment-active-success?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
 [![Render Hosting](https://img.shields.io/badge/backend-live-success?style=for-the-badge&logo=render&logoColor=white)](https://render.com)
@@ -7,7 +7,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/username/repo.svg?style=for-the-badge&label=stars&color=gold)](https://github.com)
 [![Last Commit](https://img.shields.io/github/last-commit/username/repo?style=for-the-badge)](https://github.com)
 
-**SentinelAI** is an enterprise-grade insider threat intelligence and behavior trust score analytics platform. It dynamically monitors and parses security event logs, tracks behavioral shifts across user profiles, and triggers automated AI incident investigation playbooks powered by Google Gemini models to mitigate threats before data exfiltration occurs.
+**GarudaAI** is an enterprise-grade insider threat intelligence and behavior trust score analytics platform. It dynamically monitors and parses security event logs, tracks behavioral shifts across user profiles, and triggers automated AI incident investigation playbooks powered by Google Gemini models to mitigate threats before data exfiltration occurs.
 
 ---
 
@@ -59,10 +59,10 @@
 
 ## 🔍 About The Project
 
-SentinelAI addresses the critical vulnerability of insider threats within corporate networks. Standard security information and event management (SIEM) systems generate high-volume alert fatigue without connecting disjointed user activity logs. 
+GarudaAI addresses the critical vulnerability of insider threats within corporate networks. Standard security information and event management (SIEM) systems generate high-volume alert fatigue without connecting disjointed user activity logs. 
 
 ### Why It Matters
-Insider threat detection is a needle-in-a-haystack problem. An employee performing unauthorized midnight logins, downloading larger-than-normal codebases, and uploading files to external services represents an active data breach path. SentinelAI correlates these events chronologically and maps them to a rolling Behavior Trust Score (0-100).
+Insider threat detection is a needle-in-a-haystack problem. An employee performing unauthorized midnight logins, downloading larger-than-normal codebases, and uploading files to external services represents an active data breach path. GarudaAI correlates these events chronologically and maps them to a rolling Behavior Trust Score (0-100).
 
 ### Expected Impact
 * **Reduced Response Time**: Lowers incident response cycles from hours to seconds through Gemini AI-generated playbooks.
@@ -89,7 +89,7 @@ Insider threat detection is a needle-in-a-haystack problem. An employee performi
 > *Dashboard visualization with circular user trust indicators, dark mode grid styling, and Chart.js historical trend lines.*
 ```
 +--------------------------------------------------------------------------------+
-|  [SentinelAI]  Search Employees... (EMP032)                        [STATUS: OK]|
+|  [GarudaAI]  Search Employees... (EMP032)                        [STATUS: OK]|
 +--------------------------------------------------------------------------------+
 |  EMPLOYEE PROFILES                 |  BEHAVIOR TRUST SCORE TREND OVER TIME     |
 |  * EMP032 - DevOps Engineer [10/100] |  100 |-------------------               |
@@ -240,7 +240,7 @@ PORT=5000
 DEV_MODE=true
 
 # MongoDB connection string (leave blank to run in JSON mock database fallback)
-MONGODB_URI=mongodb://localhost:27017/sentinelai
+MONGODB_URI=mongodb://localhost:27017/garudaai
 
 # GOOGLE GEMINI API KEY (Optional - falls back to local playbooks if empty)
 GEMINI_API_KEY=AIzaSy...
@@ -285,7 +285,7 @@ All routes expect `Content-Type: application/json` and token headers under `DEV_
 
 ## 🗄️ Database Design
 
-SentinelAI is built to run on MongoDB document collections or local JSON fallbacks:
+GarudaAI is built to run on MongoDB document collections or local JSON fallbacks:
 
 ```
 [Employees Collection]
@@ -396,7 +396,7 @@ Tests verify:
 
 ## 🤝 Contributing
 
-We welcome contributions to SentinelAI! Please review our guidelines:
+We welcome contributions to GarudaAI! Please review our guidelines:
 1. Fork the project.
 2. Create a Feature branch (`git checkout -b feature/NewFeature`).
 3. Commit your changes (`git commit -m 'Add NewFeature'`).
@@ -426,7 +426,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-<p align="right">(<a href="#-sentinelai">Back to Top</a>)</p>
+<p align="right">(<a href="#-garudaai">Back to Top</a>)</p>
 
 <p align="center">
   <sub>Built with passion for security innovation.</sub>

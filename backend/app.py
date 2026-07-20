@@ -30,7 +30,7 @@ limiter = Limiter(
 )
 
 # Configuration settings
-MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb://localhost:27017/sentinelai")
+MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb://localhost:27017/garudaai")
 DEV_MODE = os.environ.get("DEV_MODE", "true").lower() == "true"
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 
@@ -476,7 +476,7 @@ def security_chat():
 
         # General helper reply
         return (
-            "Hello, I am SentinelAI's interactive assistant. I can query our security database. Try asking:\n"
+            "Hello, I am GarudaAI's interactive assistant. I can query our security database. Try asking:\n"
             "- 'Show employees below score 50'\n"
             "- 'List privileged administrators'\n"
             "- 'Show employees in the Finance department'\n\n"
@@ -495,7 +495,7 @@ def security_chat():
             alerts_sample = list(db.alerts.find({}, {"_id": 0, "alert_id": 1, "employee_id": 1, "type": 1, "severity": 1, "status": 1}))
             
             prompt = f"""
-You are the SentinelAI Security Assistant chat module. You answer security questions about the network and our employees.
+You are the GarudaAI Security Assistant chat module. You answer security questions about the network and our employees.
 
 DATABASE SUMMARY CONTEXT:
 - Employees: {employees_sample[:30]} ... (plus more profiles in db)

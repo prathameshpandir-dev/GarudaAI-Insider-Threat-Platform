@@ -1,6 +1,6 @@
-# SentinelAI Deployment Guide
+# GarudaAI Deployment Guide
 
-This document outlines the step-by-step instructions to deploy SentinelAI to production using Vercel (frontend React client) and Render (backend Flask server).
+This document outlines the step-by-step instructions to deploy GarudaAI to production using Vercel (frontend React client) and Render (backend Flask server).
 
 ---
 
@@ -35,7 +35,7 @@ We host the Flask API server on **Render** as a Web Service.
    - `FIREBASE_PROJECT_ID` = *(Your ID)*
    - `FIREBASE_PRIVATE_KEY` = *(Your Private Key)*
    - `FIREBASE_CLIENT_EMAIL` = *(Your Client Email)*
-4. Click **Deploy Web Service**. Render will install dependencies and start the Flask service. Copy the public URL (e.g. `https://sentinelai-backend.onrender.com`).
+4. Click **Deploy Web Service**. Render will install dependencies and start the Flask service. Copy the public URL (e.g. `https://garudaai-backend.onrender.com`).
 
 ---
 
@@ -51,5 +51,5 @@ We host the React static application on **Vercel**.
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
 3. Expand the **Environment Variables** section and add:
-   - `VITE_API_BASE_URL` = *(The URL of your Render backend, e.g. `https://sentinelai-backend.onrender.com`)*
+   - `VITE_API_BASE_URL` = *(The URL of your Render backend, e.g. `https://garudaai-backend.onrender.com`)*
 4. Click **Deploy**. Vercel will build the frontend assets, set up SPA rewrites based on `frontend/vercel.json`, and serve the app at a public domain.

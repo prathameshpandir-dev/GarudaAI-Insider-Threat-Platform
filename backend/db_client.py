@@ -304,7 +304,7 @@ class MockDatabase:
 
 def get_db(mongodb_uri=None):
     if not mongodb_uri:
-        mongodb_uri = os.environ.get("MONGODB_URI", "mongodb://localhost:27017/sentinelai")
+        mongodb_uri = os.environ.get("MONGODB_URI", "mongodb://localhost:27017/garudaai")
         if os.path.exists(".env"):
             with open(".env", "r") as f:
                 for line in f:

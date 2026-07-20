@@ -164,7 +164,7 @@ def generate_ai_explanation(db, alert_id):
         model = genai.GenerativeModel('gemini-1.5-flash')
         
         prompt = f"""
-You are SentinelAI, an elite AI Cyber Security Incident Response Investigator. 
+You are GarudaAI, an elite AI Cyber Security Incident Response Investigator. 
 Analyze the following security alert and employee profile behavior timeline to write an investigation report.
 
 EMPLOYEE METADATA:

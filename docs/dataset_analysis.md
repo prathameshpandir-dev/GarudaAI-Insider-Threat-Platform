@@ -1,6 +1,6 @@
-# SentinelAI Dataset Analysis
+# GarudaAI Dataset Analysis
 
-This document provides a detailed overview of the synthetic dataset generated for the SentinelAI Behavior Trust Score & Insider Threat Detection platform.
+This document provides a detailed overview of the synthetic dataset generated for the GarudaAI Behavior Trust Score & Insider Threat Detection platform.
 
 ---
 

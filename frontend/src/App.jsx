@@ -30,7 +30,7 @@ export default function App() {
   const [loadingReport, setLoadingReport] = useState(false);
   const [chatMessage, setChatMessage] = useState('');
   const [chatHistory, setChatHistory] = useState([
-    { role: 'assistant', text: 'Hello, I am the SentinelAI Analyst Assistant. You can ask me to list at-risk employees or query specific departments.' }
+    { role: 'assistant', text: 'Hello, I am the GarudaAI Analyst Assistant. You can ask me to list at-risk employees or query specific departments.' }
   ]);
   const [sendingChat, setSendingChat] = useState(false);
   
@@ -329,7 +329,7 @@ export default function App() {
         <div className="p-5 border-b border-dark-border flex items-center gap-3">
           <Shield className="w-7 h-7 text-blue-500 animate-pulse" />
           <div>
-            <h1 className="text-xl font-bold tracking-wider text-white">SENTINEL<span className="text-blue-500">AI</span></h1>
+            <h1 className="text-xl font-bold tracking-wider text-white">GARUDA<span className="text-blue-500">AI</span></h1>
             <p className="text-[10px] text-gray-500 uppercase tracking-widest font-semibold">Insider Threat Intelligence</p>
           </div>
         </div>
