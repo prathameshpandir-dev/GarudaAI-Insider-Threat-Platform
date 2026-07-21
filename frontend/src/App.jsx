@@ -2,13 +2,19 @@ import React, { useState, useEffect, useRef } from 'react';
 import { 
   Shield, ShieldAlert, ShieldCheck, Search, Users, User, Clock, 
   AlertTriangle, FileText, HardDrive, Mail, Globe, Key, Terminal, 
-  RefreshCw, Send, Brain, ChevronRight, Activity, Cpu, AlertCircle, Info
+  RefreshCw, Send, Brain, ChevronRight, Activity, Cpu, AlertCircle, Info, LogOut
 } from 'lucide-react';
 import { Chart } from 'chart.js/auto';
+import LoginPage from './components/LoginPage';
+import { auth, signOut, onAuthStateChanged, isFirebaseConfigured } from './firebase';
 
 const API_BASE = 'http://localhost:5000/api';
 
 export default function App() {
+  // Authentication State
+  const [authUser, setAuthUser] = useState(null);
+  const [authLoading, setAuthLoading] = useState(true);
+
   // Application State
   const [employees, setEmployees] = useState([]);
   const [selectedEmp, setSelectedEmp] = useState(null);
@@ -42,12 +48,54 @@ export default function App() {
   const chartInstance = useRef(null);
   const chatBottomRef = useRef(null);
 
+  // Monitor Firebase Auth session persistence
+  useEffect(() => {
+    if (isFirebaseConfigured && auth) {
+      const unsubscribe = onAuthStateChanged(auth, async (user) => {
+        if (user) {
+          try {
+            const tokenResult = await user.getIdTokenResult();
+            const role = tokenResult.claims?.role || 'analyst';
+            setAuthUser({
+              uid: user.uid,
+              email: user.email,
+              displayName: user.displayName || user.email.split('@')[0],
+              role: role
+            });
+          } catch (e) {
+            setAuthUser({
+              uid: user.uid,
+              email: user.email,
+              displayName: user.email.split('@')[0],
+              role: 'analyst'
+            });
+          }
+        } else {
+          setAuthUser(null);
+        }
+        setAuthLoading(false);
+      });
+      return () => unsubscribe();
+    } else {
+      setAuthLoading(false);
+    }
+  }, []);
+
+  const handleLogout = async () => {
+    if (isFirebaseConfigured && auth) {
+      await signOut(auth);
+    }
+    setAuthUser(null);
+  };
+
   // Initialize and Fetch Initial Dashboard Data
   useEffect(() => {
-    fetchHealth();
-    fetchEmployees();
-    fetchAlerts();
-  }, []);
+    if (authUser) {
+      fetchHealth();
+      fetchEmployees();
+      fetchAlerts();
+    }
+  }, [authUser]);
 
   // Fetch employee details when selection changes
   useEffect(() => {
@@ -319,6 +367,19 @@ export default function App() {
     return matchesSearch && matchesDept;
   });
 
+  // Unauthenticated Guard
+  if (authLoading) {
+    return (
+      <div className="flex h-screen w-screen items-center justify-center bg-dark-bg text-blue-500 font-sans">
+        <RefreshCw className="w-8 h-8 animate-spin" />
+      </div>
+    );
+  }
+
+  if (!authUser) {
+    return <LoginPage onLoginSuccess={(userProfile) => setAuthUser(userProfile)} />;
+  }
+
   return (
     <div className="flex h-screen w-screen overflow-hidden bg-dark-bg text-gray-200">
       
@@ -442,6 +503,19 @@ export default function App() {
           </div>
 
           <div className="flex items-center gap-3">
+            {/* Active User Identity & Role Badge */}
+            {authUser && (
+              <div className="flex items-center gap-2 px-3 py-1.5 bg-dark-card border border-dark-border/80 rounded-md text-xs">
+                <User className="w-3.5 h-3.5 text-blue-400" />
+                <span className="font-semibold text-gray-200">{authUser.email}</span>
+                <span className={`px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider ${
+                  authUser.role === 'admin' ? 'bg-purple-500/20 text-purple-300 border border-purple-500/30' : 'bg-blue-500/20 text-blue-300 border border-blue-500/30'
+                }`}>
+                  {authUser.role || 'ANALYST'}
+                </span>
+              </div>
+            )}
+
             <button
               onClick={handleResetDemo}
               disabled={resetting}
@@ -449,6 +523,16 @@ export default function App() {
             >
               <RefreshCw className={`w-3.5 h-3.5 ${resetting ? 'animate-spin' : ''}`} />
               Reset Demo State
+            </button>
+
+            {/* Logout Action Button */}
+            <button
+              onClick={handleLogout}
+              title="Sign Out of GarudaAI"
+              className="flex items-center gap-1.5 text-xs font-semibold py-2 px-3 border border-rose-500/30 bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 rounded-md transition-all cursor-pointer"
+            >
+              <LogOut className="w-3.5 h-3.5" />
+              Sign Out
             </button>
           </div>
         </header>

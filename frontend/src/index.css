@@ -60,3 +60,14 @@ body {
 .text-medium { color: #F59E0B !important; }
 .text-high { color: #EF4444 !important; }
 .text-critical { color: #D946EF !important; }
+
+/* Micro-interaction error shake animation */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+.animate-shake {
+  animation: shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
